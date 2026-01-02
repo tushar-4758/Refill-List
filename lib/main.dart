@@ -47,6 +47,9 @@ class HomePage extends StatelessWidget {
               },
               child: const Text("Click Me"),
             ),
+            Container(
+              child: Text('image'),
+            )
           ],
         ),
       ),
