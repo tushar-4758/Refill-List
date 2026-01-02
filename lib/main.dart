@@ -29,10 +29,25 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Home"),
       ),
-      body: const Center(
-        child: Text(
-          "Welcome in Refill List App",
-          style: TextStyle(fontSize: 44),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+
+            Text(
+              "Welcome to My App",
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
+
+            const SizedBox(height: 20),
+
+            ElevatedButton(
+              onPressed: () {
+                print("Button Clicked");
+              },
+              child: const Text("Click Me"),
+            ),
+          ],
         ),
       ),
     );
